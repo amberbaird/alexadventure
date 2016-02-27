@@ -1,0 +1,74 @@
+KidChoice1Intent swing
+KidChoice1Intent contact swing
+KidChoice1Intent contact hit
+KidChoice1Intent swing for contact
+Kidchoice2Intent Power
+KidChoice2Intent swing for power
+KidChoice2Intent power swing
+KidChoice2Intent swing for the fences
+KidChoice2Intent power hit
+KidChoice3ntent steal
+KidChoice3Intent steal second
+KidChoice3Intent steal the base
+KidChoice3Intent steal it
+KidChoice3ntent steal the bag
+KidChoice3Intent swipe it
+KidChoice4Intent stay at first
+KidChoice4Intent stay on first
+KidChoice4Intent don't move
+KidChoice4Intent hold at first
+KidChoice4Intent hold on first
+KidChoice5Intent stay at third
+KidChoice5Intent stay on third
+KidChoice5Intent hold on third
+KidChoice5Intent hold at third
+KidChoice6Intent steal home
+KidChoice6Intent steal
+KidChoice6Intent go home
+KIdChoice6Intent steal it
+AdultRun1Intent run
+AdultRun1Intent run away
+AdultRun1Intent run from the dragon
+AdultRun1Intent run for your life
+AdultRun1Intent run like hell
+AdultRun1Intent flee
+AdultRun1Intent try to escape
+AdultRun2Intent run
+AdultRun2Intent run away
+AdultRun2Intent run from the dragon
+AdultRun2Intent run for you life
+AdultRun2Intent run like hell
+AdultRun2Intent flee
+AdultRun2Intent try to escape
+AdultInvestigateIntent investigate
+AdultInvestigateIntent investigate the area
+AdultInvestigateIntent search
+AdultInvestigateIntent search the area
+AdultInvestigateIntent look for clues
+AdultInvestigateIntent try to find out what is going on
+AdultFightIntent fight
+AdultFightIntent fight the dragon
+AdultFightIntent take on the dragon
+AdultFightIntent attack the dragon
+AdultFughtIntent beat up the dragon
+AdultFightIntent leroy jenkins
+AdultSwordIntent sword
+AdultSwordIntent use the sword
+AdultSwordIntent grab the sword
+AdultSwordIntent pick up the sword
+AdultSwordIntent fight with the sword
+AdultSwordIntent hit with sword
+AdultSpellIntent spell
+AdultspellIntent cast spell
+AdultSpellIntent cast a spell
+AdultSpellIntent cast a spell on the dragon
+AdultSpellIntent use spell
+AdultSpellIntent use a spell
+AdultSpellIntent use a spell on the dragon
+AdultSpellIntent magic
+AdultSpellIntent cast magic
+AdultSpellIntent cast a magic spell
+AdultSpellIntent cast a magic spell on the dragon
+AdultSpellIntent use magic
+AdultSpellIntent use a magic spell
+AdultSpellIntent use a magic spell on the dragon
