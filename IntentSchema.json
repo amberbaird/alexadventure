@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "intent": "KidAdultIntent"
+    },
+    {
+      "intent": "Choice1Intent"
+    },
+    {
+      "intent": "Choice2Intent"
+    },
+    {
+      "intent": "Choice3intent"
+    },
+    {
+      "intent": "Choice4Intent"
+    },
+    {
+      "intent": "Choice5Intent"
+    },
+    {
+      "intent":  "Choice6Intent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+ }
