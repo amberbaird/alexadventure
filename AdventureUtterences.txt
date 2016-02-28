@@ -1,3 +1,15 @@
+KidAdultChoiceIntent kid
+KidAdultChoiceintent kid adventure
+KidAdultChoiceIntent kids adventure
+KidAdultChoiceIntent baseball
+KidAdultChoiceIntent kids baseball 
+KidAdultChoiceIntent kids baseball adventure
+KidAdultChioceIntent adult
+KidAdultChoiceIntent adult adventure
+KidAdultChoiceIntent adults adventure
+KidAdultChoiceIntent dragon
+kidAdultChoiceIntent adult dragon
+KidAdultChoiceIntent adult dragon adventure
 KidChoice1Intent swing
 KidChoice1Intent contact swing
 KidChoice1Intent contact hit
