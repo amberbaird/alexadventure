@@ -42,20 +42,13 @@ KidChoice6Intent steal home
 KidChoice6Intent steal
 KidChoice6Intent go home
 KIdChoice6Intent steal it
-AdultRun1Intent run
-AdultRun1Intent run away
-AdultRun1Intent run from the dragon
-AdultRun1Intent run for your life
-AdultRun1Intent run like hell
-AdultRun1Intent flee
-AdultRun1Intent try to escape
-AdultRun2Intent run
-AdultRun2Intent run away
-AdultRun2Intent run from the dragon
-AdultRun2Intent run for you life
-AdultRun2Intent run like hell
-AdultRun2Intent flee
-AdultRun2Intent try to escape
+AdultRunIntent run
+AdultRunIntent run away
+AdultRunIntent run from the dragon
+AdultRunIntent run for your life
+AdultRunIntent run like hell
+AdultRunIntent flee
+AdultRunIntent try to escape
 AdultInvestigateIntent investigate
 AdultInvestigateIntent investigate the area
 AdultInvestigateIntent search
