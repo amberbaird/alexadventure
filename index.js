@@ -80,7 +80,7 @@ AlexAdventure.prototype.eventHandlers.onSessionEnded = function (sessionEndedReq
 };
 
 //story variables
-var AdventureChoice;
+var advChoice;
 var Name;
 var Choice1;
 var Choice2;
@@ -88,6 +88,7 @@ var Choice3;
 var Choice4;
 var Choice5;
 var Choice6;
+var Continue = true;
 
 //start here with logic
 AlexAdventure.prototype.intentHandlers = {
@@ -165,9 +166,6 @@ AlexAdventure.prototype.intentHandlers = {
     }
 };
 
-/**
- * Function to handle the onLaunch skill behavior
- */
 
 name = function getName() {
     var repromptText = "AlexAdventure can take you on an adventure. What is your first name, adventurer?";
@@ -203,58 +201,36 @@ function handleAdvChoice(intent, session, response) {
     response.ask(speechOutput, repromptOutput);
         }
     });
+    
+    gameEngine();
 }
 
-
- * Gets a poster prepares the speech to reply to the user.
- */
-function handleNextEventRequest(intent, session, response) {
-    
-    if (advChoice == "kid"){
-        
-    }
-    else if (advChoice == "adult"{
-        
-    })
-    
-    
-    
-    var cardTitle = "More events on this day in history",
-        sessionAttributes = session.attributes,
-        result = sessionAttributes.text,
-        speechText = "",
-        cardContent = "",
-        repromptText = "Do you want to know more about what happened on this date?",
-        i;
-    if (!result) {
-        speechText = "With History Buff, you can get historical events for any day of the year.  For example, you could say today, or August thirtieth. Now, which day do you want?";
-        cardContent = speechText;
-    } else if (sessionAttributes.index >= result.length) {
-        speechText = "There are no more events for this date. Try another date by saying <break time = \"0.3s\"/> get events for august thirtieth.";
-        cardContent = "There are no more events for this date. Try another date by saying, get events for august thirtieth.";
-    } else {
-        for (i = 0; i < paginationSize; i++) {
-            if (sessionAttributes.index>= result.length) {
-                break;
+function gameEngine() {
+    //set Continue to False in individual functions to track if should continue
+    //handlers must return choice variables
+    while (Continue == true){
+        if (advChoice == "kid"){
+            Choice1 = handleKidChoice1(); //handles must return choice
+            Choice2 = handleKidChoice2();
+            Choice3 = handleKidChoice3();
+            Choice4 = handleKidChoice4();
+            Choice5 = handleKidChoice5();
+            Choice6 = handleKidChoice6();
             }
-            speechText = speechText + "<p>" + result[sessionAttributes.index] + "</p> ";
-            cardContent = cardContent + result[sessionAttributes.index] + " ";
-            sessionAttributes.index++;
-        }
-        if (sessionAttributes.index < result.length) {
-            speechText = speechText + " Wanna go deeper in history?"; //second prompt
-            cardContent = cardContent + " Wanna go deeper in history?";
+        else if (advChoice == "adult"){
+            Choice1 = handleAdultChoice1();
+            Choice2 = handleAdultChoice2();
+            Choice3 = handleAdultChoice3();
+            Choice4 = handleAdultChoice4();
+            Choice5 = handleAdultChoice5();
+            Choice6 = handleAdultChoice6();
         }
     }
-    var speechOutput = {
-        speech: "<speak>" + speechText + "</speak>",
-        type: AlexaSkill.speechOutputType.SSML
-    };
-    var repromptOutput = {
-        speech: repromptText,
-        type: AlexaSkill.speechOutputType.PLAIN_TEXT
-    };
-    response.askWithCard(speechOutput, repromptOutput, cardTitle, cardContent);
+    
+    if (Continue == false){
+        var repromptText = name + ", do you still want to play? Say yes to go again, say no to exit.";
+        var speechText = "Would you like to go on another adventure? Say yes to go again, say no to exit.";
+    }
 }
 
 
