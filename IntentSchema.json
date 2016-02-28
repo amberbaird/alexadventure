@@ -8,27 +8,123 @@
           "type": "string"
         }
       ]
-    }
-    {
-      "intent": "KidAdultIntent"
     },
     {
-      "intent": "Choice1Intent"
+      "intent": "KidAdultIntent",
+      "slots": [
+        {
+          "name": "string",
+          "type": "string"
+        }
+      ]
     },
     {
-      "intent": "Choice2Intent"
+      "intent": "KidChoice1Intent",
+      "slots": [
+        {
+          "name": "string"
+          "type": "string"
+        }
+      ]
     },
     {
-      "intent": "Choice3intent"
+      "intent": "KidChoice2Intent"
+      "slots": [
+        {
+          "name": "string"
+          "type": "string"
+        }
+      ]
     },
     {
-      "intent": "Choice4Intent"
+      "intent": "KidChoice3intent"
+      "slots": [
+        {
+          "name": "string"
+          "type": "string"
+        }
+      ]
     },
     {
-      "intent": "Choice5Intent"
+      "intent": "KidChoice4Intent"
+      "slots": [
+        {
+          "name": "string"
+          "name": "string"
+        }
+      ]
     },
     {
-      "intent":  "Choice6Intent"
+      "intent": "KidChoice5Intent"
+      "slots": [
+        {
+          "name": "string"
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "intent":  "KidChoice6Intent"
+      "slots": [
+        {
+          "name": "string"
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "intent": "AdultChoice1Intent",
+      "slots": [
+        {
+          "name": "string"
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "intent": "AdultChoice2Intent"
+      "slots": [
+        {
+          "name": "string"
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "intent": "AdultChoice3intent"
+      "slots": [
+        {
+          "name": "string"
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "intent": "AdultChoice4Intent"
+      "slots": [
+        {
+          "name": "string"
+          "name": "string"
+        }
+      ]
+    },
+    {
+      "intent": "AdultChoice5Intent"
+      "slots": [
+        {
+          "name": "string"
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "intent":  "AdultChoice6Intent"
+      "slots": [
+        {
+          "name": "string"
+          "type": "string"
+        }
+      ]
     },
     {
       "intent": "AMAZON.HelpIntent"
