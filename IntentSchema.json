@@ -28,7 +28,7 @@
       ]
     },
     {
-      "intent": "KidChoice2Intent"
+      "intent": "KidChoice2Intent",
       "slots": [
         {
           "name": "string",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "intent": "KidChoice3intent"
+      "intent": "KidChoice3intent",
       "slots": [
         {
           "name": "string",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "intent": "KidChoice4Intent"
+      "intent": "KidChoice4Intent",
       "slots": [
         {
           "name": "string",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "intent": "KidChoice5Intent"
+      "intent": "KidChoice5Intent",
       "slots": [
         {
           "name": "string",
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "intent":  "KidChoice6Intent"
+      "intent":  "KidChoice6Intent",
       "slots": [
         {
           "name": "string",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "intent": "AdultChoice2Intent"
+      "intent": "AdultChoice2Intent",
       "slots": [
         {
           "name": "string",
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "intent": "AdultChoice3intent"
+      "intent": "AdultChoice3intent",
       "slots": [
         {
           "name": "string",
@@ -100,7 +100,7 @@
       ]
     },
     {
-      "intent": "AdultChoice4Intent"
+      "intent": "AdultChoice4Intent",
       "slots": [
         {
           "name": "string",
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "intent": "AdultChoice5Intent"
+      "intent": "AdultChoice5Intent",
       "slots": [
         {
           "name": "string",
@@ -118,7 +118,7 @@
       ]
     },
     {
-      "intent":  "AdultChoice6Intent"
+      "intent":  "AdultChoice6Intent",
       "slots": [
         {
           "name": "string",
