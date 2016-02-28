@@ -22,7 +22,7 @@
       "intent": "KidChoice1Intent",
       "slots": [
         {
-          "name": "string"
+          "name": "string",
           "type": "string"
         }
       ]
@@ -31,7 +31,7 @@
       "intent": "KidChoice2Intent"
       "slots": [
         {
-          "name": "string"
+          "name": "string",
           "type": "string"
         }
       ]
@@ -40,7 +40,7 @@
       "intent": "KidChoice3intent"
       "slots": [
         {
-          "name": "string"
+          "name": "string",
           "type": "string"
         }
       ]
@@ -49,7 +49,7 @@
       "intent": "KidChoice4Intent"
       "slots": [
         {
-          "name": "string"
+          "name": "string",
           "name": "string"
         }
       ]
@@ -58,7 +58,7 @@
       "intent": "KidChoice5Intent"
       "slots": [
         {
-          "name": "string"
+          "name": "string",
           "type": "string"
         }
       ]
@@ -67,7 +67,7 @@
       "intent":  "KidChoice6Intent"
       "slots": [
         {
-          "name": "string"
+          "name": "string",
           "type": "string"
         }
       ]
@@ -76,7 +76,7 @@
       "intent": "AdultChoice1Intent",
       "slots": [
         {
-          "name": "string"
+          "name": "string",
           "type": "string"
         }
       ]
@@ -85,7 +85,7 @@
       "intent": "AdultChoice2Intent"
       "slots": [
         {
-          "name": "string"
+          "name": "string",
           "type": "string"
         }
       ]
@@ -94,7 +94,7 @@
       "intent": "AdultChoice3intent"
       "slots": [
         {
-          "name": "string"
+          "name": "string",
           "type": "string"
         }
       ]
@@ -103,7 +103,7 @@
       "intent": "AdultChoice4Intent"
       "slots": [
         {
-          "name": "string"
+          "name": "string",
           "name": "string"
         }
       ]
@@ -112,7 +112,7 @@
       "intent": "AdultChoice5Intent"
       "slots": [
         {
-          "name": "string"
+          "name": "string",
           "type": "string"
         }
       ]
@@ -121,7 +121,7 @@
       "intent":  "AdultChoice6Intent"
       "slots": [
         {
-          "name": "string"
+          "name": "string",
           "type": "string"
         }
       ]
