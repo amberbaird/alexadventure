@@ -1,3 +1,7 @@
+GetNameIntent {name}
+GetNameIntent my name in {name}
+GetNameIntent I am {name}
+GetNameIntent I'm {name}
 KidAdultChoiceIntent kid
 KidAdultChoiceintent kid adventure
 KidAdultChoiceIntent kids adventure
