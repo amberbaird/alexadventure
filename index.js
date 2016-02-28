@@ -228,8 +228,7 @@ function gameEngine() {
     }
     
     if (Continue == false){
-        var repromptText = name + ", do you still want to play? Say yes to go again, say no to exit.";
-        var speechText = "Would you like to go on another adventure? Say yes to go again, say no to exit.";
+        EndSession = true;
     }
 }
 
