@@ -88,12 +88,60 @@ var Choice4;
 //start here with logic
 AlexAdventure.prototype.intentHandlers = {
 
-    "GetFirstEventIntent": function (intent, session, response) {
-        handleFirstEventRequest(intent, session, response);
+    "GetNameIntent": function (intent, session, response) {
+        handleName(intent, session, response);
     },
 
-    "GetNextEventIntent": function (intent, session, response) {
-        handleNextEventRequest(intent, session, response);
+    "KidAdultIntent": function (intent, session, response) {
+        handleAdvChoice(intent, session, response);
+    },
+    
+    "KidChoice1Intent": function (intent, session, response) {
+        handleKidChoice1(intent, session, response);
+    },
+    
+    "KidChoice2Intent": function (intent, session, response) {
+        handleKidChoice2(intent, session, response);
+    },
+    
+   "KidChoice3Intent": function (intent, session, response) {
+        handleKidChoice3(intent, session, response);
+    },
+    
+    "KidChoice4Intent": function (intent, session, response) {
+        handleKidChoice4(intent, session, response);
+    },
+    
+    "KidChoice5Intent": function (intent, session, response) {
+        handleKidChoice5(intent, session, response);
+    },
+    
+    "KidChoice6Intent": function (intent, session, response) {
+        handleKidChoice6(intent, session, response);
+    },
+    
+    "AdultChoice1Intent": function (intent, session, response) {
+        handleAdultChoice1(intent, session, response);
+    },
+    
+    "AdultChoice2Intent": function (intent, session, response) {
+        handleAdultChoice2(intent, session, response);
+    },
+    
+    "AdultChoice3Intent": function (intent, session, response) {
+        handleAdultChoice3(intent, session, response);
+    },
+    
+    "AdultChoice4Intent": function (intent, session, response) {
+        handleAdultChoice4(intent, session, response);
+    },
+    
+    "AdultChoice5Intent": function (intent, session, response) {
+        handleAdultChoice5(intent, session, response);
+    },
+    
+    "AdultChoice6Intent": function (intent, session, response) {
+        handleAdultChoice6(intent, session, response);
     },
 
 	//help stuff
