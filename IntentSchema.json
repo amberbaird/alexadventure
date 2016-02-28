@@ -1,6 +1,15 @@
 {
   "intents": [
     {
+      "intent": "GetNameIntent",
+      "slots": [
+        {
+          "name": "string",
+          "type": "string"
+        }
+      ]
+    }
+    {
       "intent": "KidAdultIntent"
     },
     {
