@@ -13,7 +13,7 @@
       "intent": "KidAdultIntent",
       "slots": [
         {
-          "name": "string",
+          "name": "advChoice",
           "type": "string"
         }
       ]
