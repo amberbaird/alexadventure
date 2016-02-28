@@ -186,13 +186,20 @@ name = function getName() {
 
 
 function handleAdvChoice(intent, session, response) {
-    var advChoice = intent.slots.advChoice;
-    var repromptText = "AlexAdventure can take you on an adventure. What is your name adventurer?";
+    advChoice = intent.slots.advChoice;
 
-    var sessionAttributes = {};
-    // Read the first 3 events, then set the count to 3
-    sessionAttributes.index = paginationSize;
+    var repromptText = "Please choose whether you would like a baseball adventure for kids or a dragon adventure for adults.";
+    var speechText = "That's a nice name, " + name + ". Would you like to go on a kid's baseball adventure or an adult's dragon adventure?";
 
+    var speechOutput = {
+        speech: speechText,
+        type: AlexaSkill.speechOutputType.PLAIN_TEXT
+    };
+    var repromptOutput = {
+        speech: repromptText,
+        type: AlexaSkill.speechOutputType.PLAIN_TEXT
+    };
+    
     response.ask(speechOutput, repromptOutput);
         }
     });
@@ -202,6 +209,16 @@ function handleAdvChoice(intent, session, response) {
  * Gets a poster prepares the speech to reply to the user.
  */
 function handleNextEventRequest(intent, session, response) {
+    
+    if (advChoice == "kid"){
+        
+    }
+    else if (advChoice == "adult"{
+        
+    })
+    
+    
+    
     var cardTitle = "More events on this day in history",
         sessionAttributes = session.attributes,
         result = sessionAttributes.text,
@@ -240,61 +257,10 @@ function handleNextEventRequest(intent, session, response) {
     response.askWithCard(speechOutput, repromptOutput, cardTitle, cardContent);
 }
 
-function getJsonEventsFromWikipedia(day, date, eventCallback) {
-    var url = urlPrefix + day + '_' + date;
-
-    https.get(url, function(res) {
-        var body = '';
-
-        res.on('data', function (chunk) {
-            body += chunk;
-        });
-
-        res.on('end', function () {
-            var stringResult = parseJson(body);
-            eventCallback(stringResult);
-        });
-    }).on('error', function (e) {
-        console.log("Got error: ", e);
-    });
-}
-
-function parseJson(inputText) {
-    // sizeOf (/nEvents/n) is 10
-    var text = inputText.substring(inputText.indexOf("\\nEvents\\n")+10, inputText.indexOf("\\n\\n\\nBirths")),
-        retArr = [],
-        retString = "",
-        endIndex,
-        startIndex = 0;
-
-    if (text.length == 0) {
-        return retArr;
-    }
-
-    while(true) {
-        endIndex = text.indexOf("\\n", startIndex+delimiterSize);
-        var eventText = (endIndex == -1 ? text.substring(startIndex) : text.substring(startIndex, endIndex));
-        // replace dashes returned in text from Wikipedia's API
-        eventText = eventText.replace(/\\u2013\s*/g, '');
-        // add comma after year so Alexa pauses before continuing with the sentence
-        eventText = eventText.replace(/(^\d+)/,'$1,');
-        eventText = 'In ' + eventText;
-        startIndex = endIndex+delimiterSize;
-        retArr.push(eventText);
-        if (endIndex == -1) {
-            break;
-        }
-    }
-    if (retString != "") {
-        retArr.push(retString);
-    }
-    retArr.reverse();
-    return retArr;
-}
 
 // Create the handler that responds to the Alexa Request.
 exports.handler = function (event, context) {
-    // Create an instance of the HistoryBuff Skill.
+    // Create an instance of the AlexAdventure Skill.
     var skill = new AlexAdventure();
     skill.execute(event, context);
 };
