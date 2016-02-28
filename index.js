@@ -69,7 +69,7 @@ AlexAdventure.prototype.eventHandlers.onSessionStarted = function (sessionStarte
 
 AlexAdventure.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
     console.log("AlexAdventure onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
-    getWelcomeResponse(response);
+    getName();
 };
 
 AlexAdventure.prototype.eventHandlers.onSessionEnded = function (sessionEndedRequest, session) {
@@ -79,11 +79,15 @@ AlexAdventure.prototype.eventHandlers.onSessionEnded = function (sessionEndedReq
     // any session cleanup logic would go here
 };
 
+//story variables
 var AdventureChoice;
+var Name;
 var Choice1;
 var Choice2;
 var Choice3;
 var Choice4;
+var Choice5;
+var Choice6;
 
 //start here with logic
 AlexAdventure.prototype.intentHandlers = {
@@ -144,22 +148,6 @@ AlexAdventure.prototype.intentHandlers = {
         handleAdultChoice6(intent, session, response);
     },
 
-	//help stuff
-    "AMAZON.HelpIntent": function (intent, session, response) {
-        var speechText = "You can use AlexAdventure to play through an adventure. " +
-            "For example, you could say today, or August thirtieth, or you can say exit. Now, which day do you want?";
-        var repromptText = "Which day do you want?";
-        var speechOutput = {
-            speech: speechText,
-            type: AlexaSkill.speechOutputType.PLAIN_TEXT
-        };
-        var repromptOutput = {
-            speech: repromptText,
-            type: AlexaSkill.speechOutputType.PLAIN_TEXT
-        };
-        response.ask(speechOutput, repromptOutput);
-    },
-
     "AMAZON.StopIntent": function (intent, session, response) {
         var speechOutput = {
                 speech: "So long, adventurer!",
@@ -181,15 +169,9 @@ AlexAdventure.prototype.intentHandlers = {
  * Function to handle the onLaunch skill behavior
  */
 
-function getWelcomeResponse(response) {
-    // If we wanted to initialize the session to have some attributes we could add those here.
-    var cardTitle = "Go On An Adventure";
-    var repromptText = "AlexAdventure can take you on an adventure. Please choose whether you would like a baseball adventure for kids or a dragon adventure for adults.";
-	
-    var speechText = "<p>Welcome to AlexAdventure.</p> <p>Would you like to go on a kid's baseball adventure or an adult's dragon adventure?</p>";
-    var cardOutput = "AlexAdventure. Go on a baseball adventure or dragon adventure.";
-    // If the user either does not reply to the welcome message or says something that is not
-    // understood, they will be prompted again with this text.
+name = function getName() {
+    var repromptText = "AlexAdventure can take you on an adventure. What is your first name, adventurer?";
+    var speechText = "<p>Welcome to AlexAdventure.</p> <p>What is your first name, adventurer?</p>" 
 
     var speechOutput = {
         speech: "<speak>" + speechText + "</speak>",
@@ -199,37 +181,24 @@ function getWelcomeResponse(response) {
         speech: repromptText,
         type: AlexaSkill.speechOutputType.PLAIN_TEXT
     };
-    response.askWithCard(speechOutput, repromptOutput, cardTitle, cardOutput);
+    response.ask(speechOutput, repromptOutput);
 }
 
 
-
-/**
- * Gets a poster prepares the speech to reply to the user.
- */
-function handleFirstEventRequest(intent, session, response) {
-    var daySlot = intent.slots.day;
+function handleAdvChoice(intent, session, response) {
+    var advChoice = intent.slots.advChoice;
     var repromptText = "AlexAdventure can take you on an adventure. What is your name adventurer?";
-	
-	var name = "";
 
     var sessionAttributes = {};
     // Read the first 3 events, then set the count to 3
     sessionAttributes.index = paginationSize;
 
-
-			
-     response.ask(speechOutput, repromptOutput);
+    response.ask(speechOutput, repromptOutput);
         }
     });
 }
 
 
-function createPlayerName(name) {
-    return {
-        name: name
-    };
-/**
  * Gets a poster prepares the speech to reply to the user.
  */
 function handleNextEventRequest(intent, session, response) {
